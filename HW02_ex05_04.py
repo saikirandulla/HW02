@@ -22,31 +22,33 @@
 ################################################################################
 # Write your functions below:
 # Body
+def check_stick_lengths():
 
+	a = int(raw_input (" Enter the first side length: "))
+	b = int(raw_input (" Enter the second side length: "))
+	c = int(raw_input (" Enter the third side length: "))
+	is_triangle(a,b,c)
 
-
-
-
-
-
-
+def is_triangle(a,b,c): 
+	if a > (b + c):
+		if b > (a + c):
+			if c > (a + b):
+				print "Yes"
+			else:
+				print "No"
+		else:
+			print "No"
+	else:
+		print "No"
 
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have four function calls in this function
-    for is_triangle (we want to test the edge cases!):
-    is_triangle(1,2,3)
-    is_triangle(1,2,4)
-    is_triangle(1,5,3)
-    is_triangle(6,2,3)
-    and a function call for
-    check_stick_lengths()
-    """
-    print("Hello World!")
-
-
-
+	print("Hello World!")
+	is_triangle(1,2,3)
+	is_triangle(1,2,4)
+	is_triangle(1,5,3)
+	is_triangle(6,2,3)
+	check_stick_lengths()
 if __name__ == "__main__":
     main()

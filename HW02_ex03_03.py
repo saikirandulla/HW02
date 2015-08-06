@@ -14,9 +14,12 @@
 ################################################################################
 # Write your function below:
 # Body
-
-
-
+def right_justify(s):
+	a = len(s)
+	b = 70 - a
+	c = ' ' * b
+	d = c + s
+	print d
 
 
 
@@ -27,7 +30,7 @@ def main():
     """Call your functions within this function."""
     print("Hello World!")
     right_justify("Python")
-    right_justify("YOUR_NAME")
+    right_justify("Saikiran Dulla")
 
 if __name__ == "__main__":
     main()

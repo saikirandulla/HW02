@@ -30,34 +30,65 @@
 
 # A print statement all by itself ends the current line and goes to the next line.
 
+
+def two_by_two(d,f):
+	print d
+	print f
+	print f
+	print f
+	print f
+	print d
+	print f
+	print f
+	print f
+	print f
+	print d
+
+
+
+
 # (2) Write a function that draws a similar grid with four rows and four columns.
 ################################################################################
 # Write your functions below:
 # Body
 
-
-
-
-
-
-
-
-
-
-
+def four_by_four(h,i):
+	print h
+	print i
+	print i
+	print i
+	print i
+	print h
+	print i
+	print i
+	print i
+	print i
+	print h
+	print i
+	print i
+	print i
+	print i
+	print h
+	print i
+	print i
+	print i
+	print i
+	print h
 
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have two function calls in this function:
-    two_by_two()
-    four_by_four()
-    """
-    print("Hello World!")
-    
-
-
+	print("Hello World!")
+	a = '+'
+	b = '-'
+	c='|'
+	e = " "
+	d = a + 4*b + a + 4*b + a
+	f = c + 4*e + c + 4*e + c 
+	two_by_two(d,f)
+	h = a + 4*b + a + 4*b + a + 4*b + a + 4*b + a
+	i = c + 4*e + c + 4*e + c + 4*e + c + 4*e + c
+	four_by_four(h,i)
 
 if __name__ == "__main__":
     main()

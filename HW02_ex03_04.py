@@ -28,23 +28,50 @@
 ################################################################################
 # Write your functions below:
 # Body
+#
+#2. def do_twice(f,s):
+#	f(s)
+#	f(s)
+	
+#def print_spam(s):
+#	print s
+	
+#3. 
 
+#def print_twice(s): 
+#	print s
+#	print s
+	
+#def new_do_twice(f,s):
+#	f(s)
+#	f(s)
+	
+#def print_spam(s):
+#	print s
+	
+#def print_twice(s): 
+#	print s
+#	print s
 
-
-
-
-
+def do_four(f,s):
+	f(s)
+	
+def print_four(s):
+	print (s*4)
+	
 
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have one function call in this function:
-    do_four([function object], [some_value])
-    """
-    print("Hello World!")
-    
-
+  """Call your functions within this function.
+  When complete have one function call in this function:
+  do_four([function object], [some_value])
+  """
+  print("Hello World!")
+#  print_twice("spam1")
+#  new_do_twice(print_twice,"spam")
+  do_four(print_four,"Hi")
+#	print_twice("spam")
 
 if __name__ == "__main__":
     main()
